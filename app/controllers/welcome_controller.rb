@@ -7,6 +7,7 @@ class WelcomeController < ApplicationController
       config.access_token        = "151968748-gZFOxsnBHeIZJ3spGAe8g0dMBB7VhLw5n0zekseH"
       config.access_token_secret = ENV["YODA_ACCESS_TOKEN_SECRET"]
     end
+    @tweet = Tweet.new
 
     # arod_tweets = client.search("#arod", :result_type => "recent").take(3).each do |tweet|
     #   puts tweet.text
