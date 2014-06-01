@@ -5,6 +5,7 @@ $pleasinghue: #facade;
 
 html, body {
   height:100%;
+  font: sans-serif;
 }
 
 h1, p, form, input, div {
@@ -29,11 +30,6 @@ h1, p, form, input, div {
   overflow: hidden;
 }
 
-// .col {
-//   display: inline-block;
-//   height: 100%;
-// }
-
 .col-copy {
   background-color: $babyblue;
   float: left;
@@ -41,12 +37,17 @@ h1, p, form, input, div {
 }
 
 .col-form-input {
-  // background-color: red;
+  position: relative;
   float: right;
-  // to account for absurd whitespace put into place by inline-block
-  margin-left: -4px;
   vertical-align: top;
   width:480px;
+  textarea {
+    // color:transparent;
+    font-family: sans-serif;
+    z-index: 500;
+    // commented this out, as it's unclear whether chrome needs it
+    // -webkit-text-fill-color:transparent;
+  }
 }
 
 div.col-form-input form input[type='submit'] {
@@ -54,4 +55,25 @@ div.col-form-input form input[type='submit'] {
   float: right;
 }
 
+// z-indexs for laying the invisible textarea over the actual displayed text
+#user-text {
+  z-index: 0;
+}
+
+.underlay {
+  position: absolute;
+  pre {
+    display: inline;
+    overflow: wrap;
+    z-index: 5;
+    margin: 0;
+    padding: 0;
+    /* Browser specific (not valid) styles to make preformatted text wrap */
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  }
+}
 

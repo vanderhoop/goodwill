@@ -8,6 +8,11 @@
     <p>Every day, millions of Twitter characters go unused. That's . But now you can tweet as you normally would, and we'll turn any leftover characters into a message about the cause of your choice.</p>
   </div>
   <div class="col col-form-input">
+    <div class="underlay">
+      <pre id="user-text"></pre>
+      <pre id="generated-text"></pre>
+    </div>
+
     <%= render "tweet_form" %>
   </div> <!-- .col-form-input -->
 </div> <!-- .form-wrapper -->
