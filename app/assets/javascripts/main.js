@@ -46,6 +46,8 @@ $(document).ready(function(){
 
   function appendText(){
     var stringToAppend = filler[determineAppropriateLength()];
-    $("#generated-text").text(stringToAppend || " | fartstore").fadeIn();
+    $generatedText = $("#generated-text");
+    $generatedText.hide();
+    $generatedText.text(stringToAppend || " | fartstore").fadeIn();
   };
 }); //document.ready
