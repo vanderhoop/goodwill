@@ -2,6 +2,8 @@
 // Development Helpers
 $babyblue: RGB(160, 195, 255);
 $pleasinghue: #facade;
+$textAndPreTagFontFamily: monospace;
+$textAndPreTagFontSize: 1.2em;
 
 html, body {
   height:100%;
@@ -39,14 +41,20 @@ h1, p, form, input, div {
 .col-form-input {
   position: relative;
   float: right;
+  font-size: 12px;
   vertical-align: top;
   width:480px;
   textarea {
-    // color:transparent;
-    font-family: sans-serif;
+    color:red;
+    border: 0;
+    font-family: $textAndPreTagFontFamily;
+    font-size: $textAndPreTagFontSize;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     z-index: 500;
     // commented this out, as it's unclear whether chrome needs it
-    // -webkit-text-fill-color:transparent;
+    // -webkit-text-fill-color:orange;
   }
 }
 
@@ -56,17 +64,15 @@ div.col-form-input form input[type='submit'] {
 }
 
 // z-indexs for laying the invisible textarea over the actual displayed text
-#user-text {
-  z-index: 0;
-}
 
 .underlay {
   position: absolute;
   pre {
     display: inline;
-    overflow: wrap;
-    z-index: 5;
+    font: $textAndPreTagFontFamily;
+    font-size: $textAndPreTagFontSize;
     margin: 0;
+    overflow: wrap;
     padding: 0;
     /* Browser specific (not valid) styles to make preformatted text wrap */
     white-space: pre-wrap;       /* css-3 */
@@ -74,6 +80,7 @@ div.col-form-input form input[type='submit'] {
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    z-index: 5;
   }
 }
 
