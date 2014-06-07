@@ -1,9 +1,9 @@
 class TweetsController < ApplicationController
+  before_action :return_twitter_user, :only => :create
 
   def create
     client = return_twitter_user
-    client.update(tweet_params[:text])
-    # Tweet.create(tweet_params)
+    client.update(tweet_params)
     binding.pry
   end
 
@@ -12,9 +12,5 @@ class TweetsController < ApplicationController
     def tweet_params
       params.require(:tweet).permit(:text)
     end
-
-
-
-
 
 end
