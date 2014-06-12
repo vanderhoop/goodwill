@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   var $formField = $("#tweet_text"),
       $userInput = $("#user-text").text();
-      $generatedAppendage = $("#generated-text").text();
+      $generatedAppendage = $("#generated-text").text(),
       filler = {
         140: "",
         139: " | You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for ",
@@ -32,20 +32,27 @@ $(document).ready(function(){
 
   function getCharacterCount(){
     return $formField.val().length;
-  };
+  }
 
   function getUserInput(){
     return $formField.val();
-  };
+  }
 
   function determineAppropriateLength(){
     return 140 - getCharacterCount();
-  };
+  }
 
   function appendText(){
     var stringToAppend = filler[determineAppropriateLength()];
     $generatedText = $("#generated-text");
     $generatedText.hide();
     $generatedText.text(stringToAppend).fadeIn();
-  };
+  }
+
+  $("div.topic-choice").on("mouseover", "div.cause", function(){
+    var id = $(this).attr("id");
+    console.log("hovered over " + id);
+    // TODO: add explicit cause text when users hover over the different icons
+  });
+
 }); //document.ready
