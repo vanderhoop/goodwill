@@ -19,6 +19,8 @@ $(document).ready(function(){
         130: " | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. argvark ma darkalarke",
         129: " | if ever there was a time to cry tears of madness, this would be it. All out war across the globe, unruly murder justified by n",
         128: " | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ",
+        127: " | Lorem ipsum dolor sit amet, consectetuer omfg i like turtles more than anything omg turtles where can I g #spreadthegoodwill",
+        126: " | #sharethelove",
         0: ""
       };
 

@@ -35,7 +35,8 @@ h1, p, form, input, div {
 .col-copy {
   background-color: $babyblue;
   float: left;
-  width: 480px;
+  padding: 20px;
+  width: 440px;
 }
 
 .col-form-input {
@@ -87,11 +88,22 @@ div.col-form-input form input[type='submit'] {
 .topic-choice {
   text-align: center;
   .cause {
-    background: url("http://icons.iconarchive.com/icons/yellowicon/game-stars/256/Mario-icon.png");
     background-size: contain;
     display: inline-block;
     height: 5em;
     margin-left: 1.5em;
     width: 5em;
+  }
+  #environmentalism {
+    background: image-url('leaf_47caaa.svg');
+    background-size: contain;
+  }
+  #social-justice {
+    background: image-url('hammer_477dca.svg');
+    background-size: contain;
+  }
+  #animal-rights {
+    background: image-url('lab_477dca.svg');
+    background-size: contain;
   }
 }
