@@ -14,17 +14,13 @@ $(document).ready(function(){
         135: " | where you are is where you're meant to be, whether you're ready or willing to believe such a thing. If you are taken to the shed and",
         134: " | on top of the newer spaceships you can find a centrally placed antenna meant to transmit directions down to the earthlings below, a",
         133: " | where have all the cowgirls gone, Papa? Where once we had a regular flock of ladyhands, now there's nothing but hypermascullne tag",
-        122: " | how can it be that I woke up today with no left foot? I distinctly recall wiggling my toes last night as I read the last chapter ",
-        121: " | basketball is less noble now than it was last ",
-        120: " | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pe",
-        119: " | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque p",
-        118: " | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque "
+        132: " | how can it be that I woke up today with no left foot? I distinctly recall wiggling my toes last night as I read the last chapter ",
+        131: " | basketball is less noble now than it was last when last Dr. J graced the court, but of course no one born after 1975 knows anyth",
+        130: " | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. argvark ma darkalarke",
+        129: " | if ever there was a time to cry tears of madness, this would be it. All out war across the globe, unruly murder justified by n",
+        128: " | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ",
+        0: ""
       };
-
-
-  $("#user-text").on('onkeydown', function(){
-    console.log("proven");
-  });
 
   $formField.on("input", function(e){
     console.log($(this).val());
@@ -48,6 +44,6 @@ $(document).ready(function(){
     var stringToAppend = filler[determineAppropriateLength()];
     $generatedText = $("#generated-text");
     $generatedText.hide();
-    $generatedText.text(stringToAppend || " | fartstore").fadeIn();
+    $generatedText.text(stringToAppend).fadeIn();
   };
 }); //document.ready
