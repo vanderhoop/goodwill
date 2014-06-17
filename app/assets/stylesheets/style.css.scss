@@ -93,6 +93,11 @@ div.col-form-input form input[type='submit'] {
     height: 5em;
     margin-left: 1.5em;
     width: 5em;
+    transition: opacity 1.0 ease-out;
+  }
+
+  .cause:hover {
+    opacity: 0.8;
   }
   #environmentalism {
     background: image-url('leaf_47caaa.svg');
