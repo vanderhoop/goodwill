@@ -68,6 +68,7 @@ div.col-form-input form input[type='submit'] {
 
 .underlay {
   position: absolute;
+
   pre {
     display: inline;
     font: $textAndPreTagFontFamily;
@@ -83,10 +84,12 @@ div.col-form-input form input[type='submit'] {
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
     z-index: 5;
   }
+
 }
 
 .topic-choice {
   text-align: center;
+
   .cause {
     background-size: contain;
     display: inline-block;
@@ -99,16 +102,20 @@ div.col-form-input form input[type='submit'] {
   .cause:hover {
     opacity: 0.6;
   }
+
   #environmentalism {
     background: image-url('leaf_47caaa.svg');
     background-size: contain;
   }
+
   #social-justice {
     background: image-url('hammer_477dca.svg');
     background-size: contain;
   }
+
   #animal-rights {
     background: image-url('baidu-paw-logo.svg');
     background-size: contain;
   }
+
 }

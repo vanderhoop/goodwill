@@ -1,5 +1,4 @@
 class TweetsController < ApplicationController
-  before_action :return_twitter_user, :only => :create
 
   def create
     client = return_twitter_user
