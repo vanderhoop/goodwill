@@ -3,14 +3,9 @@ class TweetsController < ApplicationController
 
   def create
     client = return_twitter_user
-    client.update(tweet_params)
-    binding.pry
+    client.update(params[:tweet][:text])
+    flash[:notice] = "Tweet Created, Homie."
+    redirect_to :root
   end
-
-  private
-
-    def tweet_params
-      params.require(:tweet).permit(:text)
-    end
 
 end
